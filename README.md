@@ -52,3 +52,48 @@ O projeto é composto por vários componentes:
   
   <Memo Align="alClient" ScrollBars="ssBoth"/>
 </Form>
+```
+
+## Estado Atual
+
+Este projeto está em estágio inicial de desenvolvimento (prova de conceito).
+
+Componentes funcionais:
+- Parser XAML básico
+- Gerador de código Delphi simples
+- Suporte a componentes básicos (Form, Panel, Button, Label, Edit, Memo)
+
+## Roteiro de Desenvolvimento
+
+### Fase 1: Fundação
+- [x] Definir especificação XAML-Pascal básica
+- [x] Desenvolver parser básico
+- [x] Implementar gerador de código inicial
+
+### Fase 2: Geração de Código
+- [ ] Expandir motor de geração de código
+- [ ] Suportar eventos e ligações de dados
+- [ ] Integrar com processo de compilação
+
+### Fase 3: Ferramentas e Ambiente
+- [ ] Desenvolver extensão para VS Code
+- [ ] Implementar previsualizador de UI
+- [ ] Criar sistema de validação
+
+### Fase 4: Expansão
+- [ ] Desenvolver editor visual
+- [ ] Implementar suporte a múltiplos compiladores
+- [ ] Adicionar biblioteca de estilos e temas
+
+## Como Contribuir
+
+Contribuições são bem-vindas! Você pode ajudar de várias formas:
+
+1. **Código**: Implementar recursos, corrigir bugs
+2. **Documentação**: Melhorar README, criar tutoriais
+3. **Testes**: Testar em diferentes ambientes e compiladores
+4. **Ideias**: Sugerir melhorias e novos recursos
+
+## Licença
+
+Este projeto é licenciado sob [MIT License](LICENSE).
