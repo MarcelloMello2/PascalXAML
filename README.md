@@ -1,48 +1,41 @@
 # PascalXAML
-A ideia é criar um projeto open source para modernizar a criação de interfaces no ecossistema Delphi/Object Pascal
 
+PascalXAML é um projeto open source que visa modernizar o desenvolvimento de interfaces de usuário no ecossistema Object Pascal (Delphi, FreePascal, etc.) através de uma abordagem baseada em XAML, similar ao WPF no mundo .NET.
 
-#### Componentes principais
+## Visão Geral
+
+O objetivo do PascalXAML é fornecer uma alternativa moderna aos arquivos DFM do Delphi, permitindo:
+
+- Edição de interfaces diretamente em arquivos de texto (XAML)
+- Trabalho em editores modernos como VS Code, Sublime Text, etc.
+- Independência da IDE para design visual
+- Melhor controle de versão de interfaces
+- Potencial suporte a múltiplos compiladores Pascal (Delphi, FreePascal, Oxygene, etc.)
+
+## Estrutura do Projeto
+
+O projeto é composto por vários componentes:
 
 1. **Biblioteca Core**
    - Parser XAML para Object Pascal
    - Mapeamento de tags para componentes Delphi/FPC
    - Gerador de código Object Pascal a partir de XAML
 
-2. **Extensão para VS Code**
+2. **Extensão para VS Code** (em desenvolvimento)
    - Suporte a sintaxe
    - IntelliSense para componentes e propriedades
    - Validação de XAML
    - Snippets comuns
 
-3. **Ferramenta de linha de comando**
+3. **Ferramenta de linha de comando** (planejada)
    - Compilador XAML para código Pascal
    - Integração com processos de build
 
-4. **Biblioteca de componentes**
+4. **Biblioteca de componentes** (planejada)
    - Implementações padrão dos componentes visuais
    - Adaptadores para VCL, FMX, LCL (Lazarus)
 
-#### Plano de desenvolvimento
-
-1. **MVP (Produto Mínimo Viável)**
-   - Suporte básico a contêineres (Form, Panel)
-   - Componentes comuns (Button, Edit, Label, etc.)
-   - Geração de código para Delphi VCL
-   - Extensão básica para VS Code
-
-2. **Expansão**
-   - Suporte a mais componentes
-   - Bindings de dados
-   - Suporte a estilos/temas
-   - Suporte a FMX/FireMonkey
-   - Suporte a Lazarus/LCL
-
-3. **Ferramenta visual**
-   - Editor visual que gera XAML
-   - Visualizador de design em tempo real
-
-#### Exemplo de como poderia ser o XAML para Delphi
+## Exemplo de XAML
 
 ```xml
 <Form xmlns="http://pascalxaml.org/ui"
@@ -59,44 +52,3 @@ A ideia é criar um projeto open source para modernizar a criação de interface
   
   <Memo Align="alClient" ScrollBars="ssBoth"/>
 </Form>
-```
-
-### Primeiros passos para o projeto open source
-
-1. **Configurar repositório**
-   - GitHub ou GitLab
-   - Documentação básica (README, CONTRIBUTING)
-   - Licença (MIT, Apache 2.0 ou similar)
-
-2. **Criar estrutura do projeto**
-   - Definir arquitetura
-   - Estabelecer padrões de código
-   - Configurar CI/CD
-
-3. **Implementar prova de conceito**
-   - Parser XAML simples
-   - Gerador de código para um formulário básico
-   - Demonstração de um caso de uso simples
-
-4. **Engajar a comunidade**
-   - Anunciar em fóruns de Delphi (Embarcadero, Stack Overflow, grupos do Facebook)
-   - Apresentar em eventos de comunidade (se possível)
-   - Convidar desenvolvedores para contribuir
-
-### Desafios técnicos a considerar
-
-1. **Namespaces e resolução de tipos**
-   - Como lidar com componentes de terceiros
-   - Sistema modular para extensões
-
-2. **Diferenças entre compiladores**
-   - Garantir compatibilidade com Delphi, FPC, etc.
-   - Abstrair diferenças na API de componentes
-
-3. **Eventos e código de comportamento**
-   - Como integrar o XAML com código de negócios
-   - Implementação de eventos e delegates
-
-4. **Ferramenta de migração**
-   - Converter DFMs existentes para XAML
-   - Preservar compatibilidade com projetos legados
